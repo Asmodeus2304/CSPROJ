@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Truthify</title>
+    <link rel="shortcut icon" href=".\images\iris_logo.ico" >
+    <link rel="stylesheet" type="text/css" href=".\css\index.css">
+    <meta name="description" content="landing page">
+    <meta name="keywords" content="fake news, Truthify">
+    <meta name="authors" content="Dean Daniel Ognita, Neomi Mendoza, Ashley Talabucon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src=".\js\index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href=".\htdocs\landing_page.html">
+          <img src=".\images\buttons\iris_truthify.png" alt="home page"/> 
+        </a>
+      </div>
+      <div>
+        <span class="dropdown">
+          <a href=".\index.html"><div><h3>Start</h3></div></a>
+          <a href=".\htdocs\home_page.html"><div><h3>Home</h3></div></a>
+          <a href=".\htdocs\content.html"><div><h3>Articles</h3></div></a>
+          <a href=".\htdocs\write_ups.html"><div><h3>Editorial</h3></div></a>
+          <a href=".\htdocs\sources.html"><div><h3>Sources</h3></div></a>
+          <a href=".\htdocs\about_us.html"><div><h3>About us</h3></div></a>
+        </span>
+        <img src=".\images\buttons\hamburger.png" alt="News headline"/>
+      </div>
+    </header>
+    <div>
+      <div class="window">
+        <h1>Hi!</h1>
+        <br><br><br>
+        <form name="form1" action="javascript:username();">
+          <input type="text" name="username" id="username" placeholder="username" required maxlength="10">
+          <input type="submit" value="Submit">
+          <br>
+          <p><i>Enter a name to address you</i></p>
+          <div class="tooltip">
+            <img src=".\images\buttons\qm_button.png">
+            <span class="tooltiptext"><p><i>The username that you'll be entering will be 
+            used throughout the site, so feel free to enter just about any word!</i></p></span>
+          </div>
+          <br>
+          <input id="button" type="button" value="To Homepage!" onclick="usernameConfirm()">
+        </form>
+      </div>
+    <footer class="tooltip_footer">
+      <img src=".\images\buttons\s_button.png">
+      <span class="tooltiptext_footer">
+        <h5>Sources:</h5>
+        <p>
+          Background image from  <a href="https://asia.nikkei.com/Spotlight/Asia-Insight/Asia-s-war-on-fake-news-raises-real-fears-for-free-speech">https://asia.nikkei.com/Spotlight/Asia-Insight/Asia-s-war-on-fake-news-raises-real-fears-for-free-speech</a> 
+        </p>
+      </span>
+    </footer>
+    </div>
+  </body>
+</html>

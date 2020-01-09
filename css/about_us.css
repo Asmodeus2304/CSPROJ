@@ -1,0 +1,135 @@
+/*div formatting*/
+  body {
+    background-color:#F6F9F4;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+  }
+  header {
+    height:10vh;
+    background-color: #AADEE4;
+    padding: 0;
+    z-index: 1;
+  }
+  header > div:first-child {
+    float: left;
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 5vh;
+    background-color: #ffffff;
+  }
+  header > div {
+    height:10vh;
+    width:10vh;
+    background-color:#AADEE4;
+    float:right;
+    box-sizing: border-box;
+    border: solid #AADEE4 1.25vh;
+  }
+  .dropdown{
+    height: 48vh;
+    width: 20vw;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: #AADEE4;
+    visibility: hidden;
+    z-index: 1000;
+    text-align: center;
+  }
+  .dropdown div {
+    height: 8vh;
+    width: 19vw;
+    padding-left: 1vw;
+    float: left;
+  }
+  section{
+    overflow-y: auto;
+    position: relative;
+    width: 90vw;
+    left: 5vw;
+    top: 0vh;
+  }
+  article {
+    height:85vh;
+    float: left;
+    width: 70%;
+    overflow: auto;
+    overflow-y: auto;
+  }
+  article div {
+    width:70%;
+    height: 20vh;
+    background-color:#F6F9F4;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    text-align: left;
+    outline-style: outset;
+    outline-color: #AADEE4;
+    overflow-y: auto;
+  }
+  aside  {
+    height:88vh;
+    float:right;
+    width: 18vw;
+    background-color: #AADEE4;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }  .tooltip_footer{
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    bottom:0vh;
+    right: 5vw;
+  }
+  .tooltiptext_footer{
+    padding-bottom: 1vh;
+    visibility: hidden;
+    width: 200vh;
+    background-color: #091D3A;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 10vw;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: -5vw;
+  }
+  .tooltiptext_footer > p{font-size: 2vh}
+/*image formatting*/
+  .img{
+    width: 20vh;
+    height: 20vh;
+    float: left;
+    padding-right: 2vh;
+  }
+  .pisay{width: 100%;}
+  header div img {height: 100%;}
+  footer > img{
+    width: 5vh;
+    height: 5vh;}
+/*animation*/
+  header div:hover{
+    border-color: #091D3A;
+    cursor: pointer;
+  }
+  header > div:hover .dropdown{visibility: visible;}
+  .dropdown div:hover{
+    background-color: #091D3A;
+    color: white;
+  }
+    .tooltip_footer:hover .tooltiptext_footer{visibility: visible;}
+/*text formatting*/
+  * {
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+  }
+  p{font-size: 2.3vh;}

@@ -1,0 +1,91 @@
+/*div formatting*/
+  body {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    text-align: center;
+  }
+  header {
+    height:10vh;
+    background-color: #AADEE4;
+    padding: 0;
+    z-index: 1;
+  }
+  header > div:first-child {
+    float: left;
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 5vh;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+  header > div {
+    height:10vh;
+    width:10vh;
+    background-color:#AADEE4;
+    float:right;
+    box-sizing: border-box;
+    border: solid #AADEE4 1.25vh;
+  }
+  .dropdown{
+    height: 48vh;
+    width: 20vw;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: #AADEE4;
+    visibility: hidden;
+    z-index: 1000;
+    text-align: center;
+  }
+  .dropdown div {
+    height: 8vh;
+    width: 19vw;
+    padding-left: 1vw;
+    float: left;
+  }
+  section{
+    height: 90vh
+    width 90vw;
+    position: relative;
+    left: 5vw;
+    text-align: left;
+  }
+  section > article:first-child{
+    height: 25vh;
+    width: 85vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    margin: 0;
+    background-color: #091D3A;
+    text-align: left;
+  }
+  section > article:last-child{
+    height: 60vh;
+    width: 80vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #6287EF;
+    overflow-y: auto;
+  }
+/*image fomatting*/
+  header div img {height: 100%;}
+/*animation*/
+  header div:hover{
+    border-color: #091D3A;
+    cursor: pointer;
+  }
+  header > div:hover .dropdown{visibility: visible;}
+  .dropdown div:hover{
+    background-color: #091D3A;
+    color: white;
+  }
+/*text formatting*/
+  * {font-family: Helvetica, Geneva, Arial, sans-serif;}
+  h1{
+    color: white;
+    font-size: 18vh;
+    display: inline;
+  }

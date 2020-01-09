@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Truthify</title>
+    <link rel="shortcut icon" href="..\images\iris_logo.ico" >
+    <link rel="stylesheet" type="text/css" href="..\css\landing_page.css">
+    <meta name="description" content="landing page">
+    <meta name="keywords" content="fake news, Truthify">
+    <meta name="authors" content="Dean Daniel Ognita, Neomi Mendoza, Ashley Talabucon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="..\js\index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="..\htdocs\landing_page.html">
+          <img src="..\images\buttons\iris_truthify.png" alt="home page"/> 
+        </a>
+      </div>
+      <div>
+        <span class="dropdown">
+          <a href="..\index.html"><div><h3>Start</h3></div></a>
+          <a href="..\htdocs\home_page.html"><div><h3>Home</h3></div></a>
+          <a href="..\htdocs\content.html"><div><h3>Articles</h3></div></a>
+          <a href="..\htdocs\write_ups.html"><div><h3>Editorial</h3></div></a>
+          <a href="..\htdocs\sources.html"><div><h3>Sources</h3></div></a>
+          <a href="..\htdocs\about_us.html"><div><h3>About us</h3></div></a>
+        </span>
+        <img src="..\images\buttons\hamburger.png" alt="News headline"/>
+      </div>
+    </header>
+    <div id="opening_div">
+      <section>
+        <div>
+          <h1 id="greeting"></h1>
+          <p>You will be shown images containing news article headlines.</p>
+          <p>Take the time to consider whether or not the articles are fake news</p>
+          <input id="proceed_button" type="button" value="Proceed" onclick="openingDivClose()">
+        </div>
+      </section>
+    </div>
+    <div id="hidden_images">
+      <section>
+        <div>
+          <h1>Fake Or Not?</h1>
+          </br>
+          <p>After looking at the news article headlines, hover over the image to see whether or not it's fake.</p>
+          <form method="post">
+            <fieldset>
+              <legend>Survey</legend>
+              Were your suspicions on whether or not the images are fake correct?
+              <br>
+              <input type="radio" name="yes" value="Yes" checked> Yes
+              <input type="radio" name="no" value="No"> No
+              <br>
+              Which of the following examples of fake news do you most often encounter?
+              <br> 
+              <select>
+                <option value="clickbait">Clickbait titles</option>
+                <option value="flyers">Flyers</option>
+                <option value="sites">Sensationalized Sites</option>
+              </select>
+              <input type="button" onclick="surveyConfirm()" id="survey_submit" value="Submit">
+            </fieldset>
+          </form>
+          <input id="proceed_button" type="button" value="Proceed" onclick="openHiddenWindow()">
+          <p id="confirmation"></p>
+        </div>
+      </section>
+      <div>
+        <div class="tooltip">
+          <span class="tooltiptext">
+            <p>Why is it fake news?</p>
+            <p>
+              The website <a href="https://www.suffolkgazette.com/news/toblerone-shape-invade-switzerland/.">https://www.suffolkgazette.com</a>  is known for its fake headlines to entertain users. They've posted their purposes on their About page that their content is fictional. It's in the fault of the user for not verifying the credibility of the page if they accidentally shared the news.
+            </p>
+          </span>
+          <img src="..\images\pictures\fake_headline1.png" alt="News headline"/>
+        </div>
+        <div class="tooltip">
+          <span class="tooltiptext">
+            <p>Why is it fake news?</p>
+            <p>
+              According to its About Us page, <a href="https://www.breitbart.com/europe/2016/03/28/climate-change-the-biggest-conspiracy-against-the-taxpayer-in-history/.">https://www.breitbart.com</a> is a website promoting the opinions of the people. However, the Breitbart News has published many lies and conspiracies in their websites. According to other sites, they are known to have misleading headlines and half-truths.
+            </p>
+          </span>
+          <img src="..\images\pictures\fake_headline2.png" alt="News headline"/>
+        </div>
+        <div class="tooltip">
+          <span class="tooltiptext">
+            <p>Why is it fake news?</p>
+            <p>
+              The article is published and edited by someone named Nyoro Alisan (<a href="https://brunomars.us/.">https://brunomars.us/</a>). He is not a part of any relevant news organization. The website features content about Bruno Mars. The articles lack grammar efficiency and half-truths. In the sources, the links redirect to another page that was created by the same publisher. 
+            </p>
+          </span>
+          <img src="..\images\pictures\fake_headline3.png" alt="News headline"/>
+        </div>
+      </div>
+    </div>
+    <div id="hidden_window">
+      <section>
+        <div>
+          <h1>FAKE NEWS</h1>
+          </br>
+          <p><i>Prevalent now more than ever.</i></p>
+          <input id="proceed_button" type="button" name="home_page" value="Home" onclick="location.href='home_page.html'">
+          <br>
+          <input id="proceed_button" type="button" name="article" value="Article" onclick="location.href='content.html'">
+          <br>
+          <input id="proceed_button" type="button" name="sources" value="Sources" onclick="location.href='sources.html'">
+          <br>
+          <input id="proceed_button" type="button" name="about_us" value="About Us" onclick="location.href='about_us.html'">
+        </div>
+      </section>
+    </div>
+    <footer class="tooltip_footer">
+      <img src="..\images\buttons\s_button.png">
+      <span class="tooltiptext_footer">
+        <h5>Sources:</h5>
+        <p>
+          Background image from  <a href="https://asia.nikkei.com/Spotlight/Asia-Insight/Asia-s-war-on-fake-news-raises-real-fears-for-free-speech">https://asia.nikkei.com/Spotlight/Asia-Insight/Asia-s-war-on-fake-news-raises-real-fears-for-free-speech</a> 
+        </p>
+      </span>
+    </footer>
+  </body>
+</html>
